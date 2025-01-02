@@ -17,9 +17,27 @@ int main()
         }
         for (int j = 1; j <= 2 * (rows - i); j++)
         {
-            cout << "-";
+            cout << " ";
         }
         for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    // lower part
+    for (int i = 1; i <= rows; i++)
+    {
+        for (int j = rows; j >= i; j--)
+        {
+            cout << "*";
+        }
+        for (int j = 2; j < (2 * i); j++)
+        {
+            cout << " ";
+        }
+        for (int j = rows; j >= i; j--)
         {
             cout << "*";
         }
